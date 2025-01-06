@@ -1,0 +1,71 @@
+:root {
+  /* colors */
+
+  --clr-cyan-600: hsl(192, 37%, 48%);
+  --clr-cyan-300: hsl(192, 90%, 77%);
+
+  --clr-purple-600: hsl(268, 34%, 53%);
+  --clr-purple-300: hsl(268, 100%, 86%);
+
+  --clr-slate-900: hsl(240, 21%, 20%);
+  --clr-slate-600: hsl(240, 10%, 57%);
+  --clr-slate-300: hsl(240, 18%, 85%);
+
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* typography */
+  --ff-primary: "Red Hat Display", sans-serif;
+
+  /* Dynamic Font Sizes Using clamp() */
+
+  /* Preset 1 */
+  --preset-1-font-size: clamp(
+    40px,
+    calc(40px + (64 - 40) * ((100vw - 375px) / (1440 - 375))),
+    64px
+  );
+  --preset-1-line-height: 110%;
+
+  /* Preset 2 */
+  --preset-2-font-size: clamp(
+    32px,
+    calc(32px + (40 - 32) * ((100vw - 375px) / (1440 - 375))),
+    40px
+  );
+  --preset-2-line-height: 110%;
+
+  /* Preset 3 */
+  --preset-3-font-size: clamp(
+    12px,
+    calc(12px + (16 - 12) * ((100vw - 375px) / (1440 - 375))),
+    16px
+  );
+  --preset-3-line-height: 110%;
+
+  /* Preset 4 */
+  --preset-4-font-size: clamp(
+    16px,
+    calc(16px + (18 - 16) * ((100vw - 375px) / (1440 - 375))),
+    18px
+  );
+  --preset-4-line-height: 150%;
+
+  /* Preset 5 */
+  --preset-5-font-size: clamp(
+    16px,
+    calc(16px + (16 - 16) * ((100vw - 375px) / (1440 - 375))),
+    16px
+  );
+  --preset-5-line-height: 150%;
+
+  /* font weights */
+
+  --fw-black: 900;
+  --fw-bold: 800;
+  --fw-regular: 400;
+}
+
+h1 {
+  font-size: var(--preset-1-font-size);
+  line-height: var(--preset-1-line-height);
+}
