@@ -1,3 +1,27 @@
 @import url(/boilerplate.css);
 @import url(/font.css);
 @import url(/custom.css);
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider span {
+  border: 0.5px solid var(--clr-slate-300);
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+.vertical-line {
+  width: 1px; /* Thickness of the line */
+  height: 80px; /* Length of the line */
+  background-color: var(--clr-slate-300);
+}
+
+.img-left,
+.img-right {
+  display: none;
+}
