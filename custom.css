@@ -1,7 +1,7 @@
 :root {
   /* colors */
 
-  --clr-cyan-600: hsl(192, 37%, 48%);
+  --clr-cyan-600: hsla(192, 37%, 48%);
   --clr-cyan-300: hsl(192, 90%, 77%);
 
   --clr-purple-600: hsl(268, 34%, 53%);
@@ -63,9 +63,4 @@
   --fw-black: 900;
   --fw-bold: 800;
   --fw-regular: 400;
-}
-
-h1 {
-  font-size: var(--preset-1-font-size);
-  line-height: var(--preset-1-line-height);
 }

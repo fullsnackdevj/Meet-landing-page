@@ -1,0 +1,53 @@
+typography h1,
+h2:not(footer h2),
+h3 {
+  color: var(--clr-slate-900);
+}
+
+p:not(footer p) {
+  color: var(--clr-slate-600);
+  font-weight: var(--fw-regular);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--preset-1-font-size);
+  line-height: var(--preset-1-line-height);
+}
+
+h2 {
+  font-size: var(--preset-2-font-size);
+  line-height: var(--preset-2-line-height);
+}
+
+h3 {
+  font-size: var(--preset-4-font-size);
+  line-height: var(--preset-4-line-height);
+}
+
+/* buttons */
+
+.btn {
+  padding: 16px 40px;
+  border-radius: 50px;
+  color: var(--clr-white);
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+}
+
+.btn span {
+  opacity: 0.5;
+}
+
+.btn-cyan {
+  background-color: var(--clr-cyan-600);
+}
+
+.btn-purple {
+  background-color: var(--clr-purple-600);
+}
